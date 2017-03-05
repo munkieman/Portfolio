@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="portfolioApp">
+<head>
+
+    <title>Jason Clark - Portfolio</title>
+
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="Styles/bootstrap.css" />
+    <link rel="stylesheet" href="Styles/style.css" />
+
+    <!-- Scripts -->
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.isotope.js"></script>
+    <script src="Scripts/masonry.pkgd.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/angular-isotope.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="App/app.js"></script>
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+
+    <base href="/" />
+
+</head>
+
+<body ng-controller="mainCtrl" ng-cloak>
+
+    <!-- HEADER AND NAVBAR -->
+    <header>
+        <nav id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h4 class="navbar-brand navbar-left">Jason Clark</h4>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse-toggle">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ng-class="navClass('home')"><a href='' ng-click="loadHome()"><i class="fa fa-home"></i> Home</a></li>
+                        <li ng-class="navClass('about')"><a href='' ng-click="loadAbout()"><i class="fa fa-shield"></i> About</a></li>
+                        <li ng-class="navClass('portfolio')">
+                            <a href="#" ng-click="loadPortfolio()"><i class="fa fa-star"></i> Portfolio</a>
+                            <ul>
+                                <li>
+                                    <a href="#" ng-click="loadProgramming()">Programming</a>
+                                    <ul>
+                                        <li ng-class="navClass('web')"><a href='' ng-click="loadWeb()">Web</a></li>
+                                        <li ng-class="navClass('sharepoint')"><a href='' ng-click="loadSharePoint()">Desktop</a></li>
+                                        <li ng-class="navClass('desktop')"><a href='' ng-click="loadDesk()">SharePoint</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://www.flickr.com/photos/49975069@N08/sets/" target="_blank">Photography</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.allmusic.com/artist/munkie-mn0000712356" target="_blank">Music</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li ng-class="navClass('code')"><a href='' ng-click="loadCode()"><i class="fa fa-list"></i> Code</a></li>
+                        <li ng-class="navClass('contact')"><a href="mailto:jason_mc@btinternet.com?subject=General enquiry from Portfolio Site" ng-click="loadContact()"><i class="fa fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="pageView"><div ng-view></div></div>
+
+    <footer>
+        <div class="social">
+            <a href="#" class="social-icon facebook animate"><span class="fa fa-facebook"></span></a>&nbsp;&nbsp;
+            <a href="http://twitter.com/munkiemusic" class="social-icon twitter animate"> <span class="fa fa-twitter"></span></a>&nbsp;&nbsp;
+            <a href="https://github.com/munkieman" class="social-icon github animate"><span class="fa fa-github-alt"></span></a>&nbsp;&nbsp;
+            <a href="https://uk.linkedin.com/in/jclark4" class="social-icon linkedin animate"><span class="fa fa-linkedin"></span></a>&nbsp;&nbsp;
+            <a href="mailto:jason_mc@btinternet.com?subject=General enquiry from Portfolio Site">
+                <i class="glyphicon glyphicon-envelope"></i>
+            </a>
+        </div>
+        <p id="copyright"></p>
+    </footer>
+
+    <script>
+        function copyrightYear() {
+            var y = new Date().getFullYear();
+            document.getElementById("copyright").innerHTML = 'All Rights Reserved Jason Clark' + ' &copy;' + y;
+        }
+
+        copyrightYear();
+    </script>
+
+</body>
+</html>

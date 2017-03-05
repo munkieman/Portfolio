@@ -1,0 +1,38 @@
+﻿<div class="container-fluid" ng-controller="CodeCtrl as tab">
+
+    <section>
+        <ul class="nav nav-pills">
+            <li ng-class="{active:tab.isSet(1)}"><a href='' ng-click="tab.setTab(1)">CSS</a></li>
+            <li ng-class="{active:tab.isSet(2)}"><a href='' ng-click="tab.setTab(2)">HTML</a></li>
+            <li ng-class="{active:tab.isSet(3)}"><a href='' ng-click="tab.setTab(3)">Angular JS</a></li>
+            <li ng-class="{active:tab.isSet(4)}"><a href='' ng-click="tab.setTab(4)">VB</a></li>
+            <li ng-class="{active:tab.isSet(5)}"><a href='' ng-click="tab.setTab(5)">ASP .Net</a></li>
+            <li ng-class="{active:tab.isSet(6)}"><a href='' ng-click="tab.setTab(6)">C# .Net</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade box" ng-show="tab.isSet(1)">
+                <h4>CSS</h4>
+                <div class="row box">
+                    <div class="col-md-3 box"></div>
+                    <div class="col-md-9 box"></div>
+                </div>
+            </div>
+            <div class="tab-pane fade" ng-show="tab.isSet(2)">
+                <h4>Tab 2</h4>
+            </div>
+            <div class="tab-pane fade" ng-show="tab.isSet(3)">
+                <h4>Tab 3</h4>
+            </div>
+            <div class="tab-pane fade" ng-show="tab.isSet(4)">
+                <h4>Tab 4</h4>
+            </div>
+            <div class="tab-pane fade" ng-show="tab.isSet(5)">
+                <h4>Tab 5</h4>
+            </div>
+            <div class="tab-pane fade" ng-show="tab.isSet(6)">
+                <h4>Tab 6</h4>
+            </div>
+        </div>
+    </section>
+
+</div>

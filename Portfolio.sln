@@ -1,39 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Portfolio", "..\..\WebSites\Portfolio\", "{8DAF9BAD-D473-4301-A976-402FCE429971}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Projects(1)/Portfolio", "http://localhost:4262/Portfolio", "{B87DDDC7-5179-4157-814A-E20BA870B3B8}"
 	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_50958"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\Portfolio\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50958\"
+		Debug.AspNetCompiler.VirtualPath = "/Portfolio"
+		Debug.AspNetCompiler.PhysicalPath = "..\Portfolio\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Portfolio\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_50958"
-		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\Portfolio\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50958\"
+		Release.AspNetCompiler.VirtualPath = "/Portfolio"
+		Release.AspNetCompiler.PhysicalPath = "..\Portfolio\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Portfolio\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "50958"
-		SlnRelativePath = "..\..\WebSites\Portfolio\"
+		SlnRelativePath = "..\Portfolio\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5DC46104-1C4A-4FED-BEA5-24D97A5A9611}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8DAF9BAD-D473-4301-A976-402FCE429971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8DAF9BAD-D473-4301-A976-402FCE429971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B87DDDC7-5179-4157-814A-E20BA870B3B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B87DDDC7-5179-4157-814A-E20BA870B3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

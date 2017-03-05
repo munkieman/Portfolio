@@ -1,0 +1,295 @@
+﻿﻿<div ng-controller="AboutCtrl as about">
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1">
+            <img class="aboutImage" ng-src="{{aboutImage}}" alt="Jason Clark" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <h2>Statement</h2>
+            <p class="text-justify">
+                I am a highly motivated person with a proven track record of achievements, through providing effective solutions to problems using my project management and analytical skills,
+                then applying 6 Sigma techniques to improve a projects success and the Agile development methods to ensure that the project is delivered on-time and within budget according to the Stakeholders requirements.
+                Using VB, HTML, CSS, JavaScript and ASP.Net to provide effective solutions to those problems.  Since 2010 I have been using ASP.Net with VB.Net in a SharePoint environment,
+                which has allowed me to discover better and faster ways to achieve the end solution.
+            </p>
+            <br />
+            <h2>Bio</h2>
+            <p class="text-justify">
+                Started in computer programming in 1982 at the age of 13, after getting my first home computer; a ZX81.  Programming in BASIC to start with then moving to Assembler.
+                Moved to the Commodore VIC-20 where i created a few games using BASIC & Assembler, including a version of AMOK!.  
+                Had some brief experience with the Commodore 64 before moving to the BBC Micro B, where I learnt to create more complex software and games.
+                Got my first PC (Amstrad) in 1987, which expanded my horizons and experience to include QuickBasic, C along side 6502 Assembler.  Creating office software, accounting and some educational games.
+                During the early 1990s learnt AI programming techniques using Modula-2, POP-II, structured programming techniques (JSP) using Visual Basic and C++ also HTML Web Development (1993).
+                Added CSS and JavaScript in the mid-1990s, then Flash / ActionScript in the late 1990s.
+                Updated my skills and knowledge in 2008 to include the latest methods and new languages (.Net), also started developing on SharePoint.
+                Continued with my learning upto the present day (2016), adding AngularJS, CSS3, HTML5, Bootstrap and C#.
+            </p>
+            <br />
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5">
+            <h2>This Site</h2>
+            <p class="text-justify">
+                Was created using AngularJS v1.x, HTML5, CSS3 with the Bootstrap framework.
+            </p>
+            <br />
+        </div>
+    </div>
+
+    <div class="row">     
+        <div class="col-lg-1 col-md-1 col-sm-1"></div>  
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="panel-group" id="skillsPanel">
+                <div class="panel panel-default">
+                    <a href="" data-parent="#skillsPanel" data-target="#skills" ng-click="skillsCollapsed = !skillsCollapsed" ngshow="skillsCollapsed">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                Skills
+                                <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': !skillsCollapsed, 'glyphicon-chevron-right': skillsCollapsed}"></i>
+                            </h2>
+                        </div>
+                    </a>
+                    <div id="skills" ng-show="!skillsCollapsed">
+                        <div class="panel-body">
+                            <!--<jqcloud words="words" width="500" height="350" colors="{{colors}}" delay="10" steps="7" font-size="{from:0.09, to:0.04}"></jqcloud>-->
+
+                            <p>Level of Experience : 10 Expert - 1 Beginner</p><br />
+
+                            <div class="list-group btn-group-sm">
+                                <h4 class="list-group-item-heading bg-brand"><b>S</b>ubject <b>M</b>atter <b>E</b>xpert</h4>
+                                <a href="" type="button" class="btn btn-primary btn-responsive">HTML <small class="badge">10</small></a><!--<div class="spacer"></div>-->
+                                <button type="button" class="btn btn-primary btn-responsive">CSS <small class="badge">10</small></button>
+                                <button type="button" class="btn btn-primary btn-responsive">SharePoint <small class="badge">10</small></button>
+                                <br />
+
+                                <button type="button" class="btn btn-primary btn-responsive">VB <small class="badge">10</small></button>
+                                <button type="button" class="btn btn-primary btn-responsive">Agile <small class="badge">10</small></button>
+                                <button type="button" class="btn btn-primary btn-responsive">MS Access <small class="badge">10</small></button>
+                                <br />
+
+                                <button type="button" class="btn btn-primary btn-responsive">OneNote <small class="badge">10</small></button>
+                                <button type="button" class="btn btn-primary btn-responsive">Excel <small class="badge">10</small></button>
+                                <button type="button" class="btn btn-primary btn-responsive">Powerpoint <small class="badge">10</small></button>
+                                <br />
+                            </div>
+
+                            <div class="list-group btn-group-sm">
+                                <h4 class="list-group-item-heading bg-brand">Languages & Wireframing</h4>
+                                <button type="button" class="btn btn-primary">SQL <small class="badge">6</small></button>
+                                <button type="button" class="btn btn-primary">JavaScript <small class="badge">6</small></button>
+                                <button type="button" class="btn btn-primary">AngularJS <small class="badge">6</small></button>
+                                <br />
+                                <button type="button" class="btn btn-primary">ASP.Net <small class="badge">6</small></button>
+                                <button type="button" class="btn btn-primary">Visio <small class="badge">7</small></button>
+                                <button type="button" class="btn btn-primary">Balsamiq <small class="badge">5</small></button>
+                            </div>
+
+                            <div class="list-group btn-group-sm">
+                                <h4 class="list-group-item-heading bg-brand">Servers</h4>
+                                <button type="button" class="btn btn-primary">Windows 2012 <small class="badge">5</small></button>
+                                <button type="button" class="btn btn-primary">SQL 2014 <small class="badge">5</small></button>
+                                <button type="button" class="btn btn-primary">IIS <small class="badge">4</small></button>
+                            </div>
+
+                            <div class="list-group btn-group-sm">
+                                <h4 class="list-group-item-heading bg-brand">Methodologies</h4>
+                                <button type="button" class="btn btn-primary">UML <small class="badge">6</small></button>
+                                <button type="button" class="btn btn-primary">RWD <small class="badge">5</small></button>
+                                <button type="button" class="btn btn-primary">6 Sigma <small class="badge">8</small></button>
+                                <br />
+                                <button type="button" class="btn btn-primary">MVC <small class="badge">8</small></button>
+                                <button type="button" class="btn btn-primary">TDD <small class="badge">5</small></button>
+                                <button type="button" class="btn btn-primary">WCF <small class="badge">4</small></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel-group" id="firstPanel">
+                <div class="panel panel-default">
+                    <a href="" data-parent="#firstPanel" data-target="#education" ng-click="educationCollapsed = !educationCollapsed" ngshow="educationCollapsed">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                Education
+                                <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': !educationCollapsed, 'glyphicon-chevron-right': educationCollapsed}"></i>
+                            </h2>
+                        </div>
+                    </a>
+
+                    <div id="education" ng-show="!educationCollapsed">
+                        <div class="panel-body">
+                            <table class="table table-responsive table-hover eduTable">
+                                <thead>
+                                    <tr class="bg-brand">
+                                        <td width="15%"><h4>Year</h4></td>
+                                        <td width="30%"><h4>Establishment</h4></td>
+                                        <td width="15%"><h4>Level</h4></td>
+                                        <td width="30%"><h4>Course</h4></td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2014</td>
+                                        <td><a href="http://www.open.ac.uk/postgraduate/qualifications/f66" target="_blank">Open University</a></td>
+                                        <td>Postgraduate</td>
+                                        <td><a href="http://www.open.ac.uk/postgraduate/modules/m813">Software Development</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2014</td>
+                                        <td>Open University</td>
+                                        <td>Postgraduate</td>
+                                        <td><a href="http://www.open.ac.uk/postgraduate/modules/t889#">Problem Solving & Improvement</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2003</td>
+                                        <td><a href="http://www.lcm.ac.uk/" target="_blank">Leeds College of Music</a></td>
+                                        <td>BA(Hons)</td>
+                                        <td><a href="http://www.lcm.ac.uk/courses/Undergraduate/Production">Music Production</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2001</td>
+                                        <td>Leeds College of Music</td>
+                                        <td>HND</td>
+                                        <td><a href="http://www.lcm.ac.uk/courses/BTEC/MusicTechnology">Music Production</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1996</td>
+                                        <td><a href="http://www.reading.ac.uk/ready-to-study/study/subject-area/computer-science-ug/bsc-computer-science.aspx" target="_blank">Reading University</a></td>
+                                        <td>BSc</td>
+                                        <td><a href="https://www.reading.ac.uk/sse/ug/courses/sse-ug-G401.aspx">Computer Science</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1992</td>
+                                        <td><a href="http://www.southessex.ac.uk/about-us/campuses/southend-campus" target="_blank">SEECAT</a></td>
+                                        <td>HND</td>
+                                        <td>Computer Science</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel-group" id="secondPanel">
+                <div class="panel panel-default">
+                    <a href="" data-parent="#secondPanel" data-target="#experience" ng-click="experienceCollapsed = !experienceCollapsed" ngshow="experienceCollapsed">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                Experience
+                                <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': !experienceCollapsed, 'glyphicon-chevron-right': experienceCollapsed}"></i>
+                            </h2>
+                        </div>
+                    </a>
+
+                    <div id="experience" ng-show="!experienceCollapsed">
+                        <div class="panel-body">
+                            <table class="table table-responsive table-hover expTable">
+                                <thead>
+                                    <tr class="bg-brand">
+                                        <td width="15%"><h4>Year</h4></td>
+                                        <td width="40%"><h4>Position</h4></td>
+                                        <td width="25%"><h4>Company</h4></td>                                      
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><h5>02/2015-Present</h5></td>
+                                        <td><h5>Senior SharePoint Developer</h5></td>
+                                        <td><h5><a href="http://www.maximus.co.uk/" target="_blank">Maximus UK</a></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="text-justify">
+                                            to be confirmed<br />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>09/2015-01/2016</h5></td>
+                                        <td><h5>Dynamics CRM Developer</h5></td>
+                                        <td><h5><a href="http://www.skillsforcare.org.uk/" target="_blank">Skills for Care</a></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="text-justify">
+                                            Designing the extended CRM (xRM) system for managing contacts, engagements and organisations to be used by the locality teams.  Creating forms, revising plugins and JavaScript code, creating web resource HTML pages and branding using CSS.  Took on this project from a contractor who built the base system then I added the UI / UX.  Creating SOP documents for the development of the system, Balsamiq mockups for various sections and internet facing sites linked to the CRM server.<br />
+
+                                            Updated the <a href="http://www.careimprovementworks.org.uk">Care Improvement Works</a> website using some AngularJS and added the full Bootstrap experience so it is mobile responsive.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>2010-2015</h5></td>
+                                        <td><h5>Lead SharePoint Developer</h5></td>
+                                        <td><h5><a href="http://www.btplc.com/" target="_blank">BT Group</a></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="text-justify">
+                                            Responsible for managing and developing all web projects for the Central Business Services SharePoint site collections.  Designing wireframes using Balsamiq, Visio, Visual Paradigm and OneNote.  Creating requirement documents, liaising with Stakeholders and Senior Managers for all project specifications, then making the final decisions for them.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>2003-2010</h5></td>
+                                        <td><h5>Project / Billing Manager</h5></td>
+                                        <td>
+                                            <h5><a href="http://www.globalservices.bt.com/uk/en/home" target="_blank">BT Global Services</a></h5>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="text-justify">
+                                            Responsible for managing the UK billing for key globally focussed customers. Although was initially an account manager role I soon realised that my software development skills could be utilised to provide solutions to problems and process improvement, through creating faster more accurate solutions that reduced time taken and increased Lead to Cash (L2C). Developing the team Intranet website and SharePoint site using CSS, HTML, JavaScript and ASP.Net using VB.  Resolution of any customer issues. Developed and managed the Contract Scorecard project developed in VB using Excel as the platform this was later transferred to SharePoint as a web application, which enabled the Billing managers to provide their contract metrics each month to the leadership team.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>1996-2003</h5></td>
+                                        <td><h5>Web Designer</h5></td>
+                                        <td><h5>Freelance Contractor</h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="text-justify">
+                                            Working for various companies mostly based in the UK (IBM, Oracle, Energis, Siemens Nixdorf, Used2Bee, Haslams Estate Agents, Nodica Pharma).  Effectively creating solutions to client problems and improving current processes for a variety of companies.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5>1993-1995</h5></td>
+                                        <td><h5>Senior Computer Engineer</h5></td>
+                                        <td><h5><a href="http://www.bg-group.com/" target="_blank">BG Group</a></h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="text-justify">
+                                            Responsible for supporting 1,200 users by solving all computer related issues rapidly.  Upgrading and repairing equipment, installing new hardware and connecting communication systems. Organising department moves of equipment.  Improved on the existing procedure for installing computers onto the network that reduced the timescale by 75%.  Demonstrating equipment for overseas use.  Training users on computer usage and file management. Managing stock of computer equipment.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel-group" id="thirdPanel">
+                <div class="panel panel-default">
+                    <a href="" data-parent="#thirdPanel" data-target="#achieve" ng-click="achieveCollapsed = !achieveCollapsed" ngshow="achieveCollapsed">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                Achievements
+                                <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': !achieveCollapsed, 'glyphicon-chevron-right': achieveCollapsed}"></i>
+                            </h2>
+                        </div>
+                    </a>
+
+                    <div id="achieve" ng-show="!achieveCollapsed">
+                        <div class="panel-body achievements">
+                            <ul>
+                                <li>Local Leader for <a href="https://www.joininuk.org/" target="_blank">Join In</a> Volunteering programme</li>
+                                <li>Microsoft product tester</li>
+                                <li>Published Songwriter & Photographer</li>
+                                <li>Which 'Website of the Year’ Award (1995 / 1996)</li>
+                                <li>Duke of Edinburgh Bronze Award</li>
+                                <li>Created math based computer board game 'Mathopoly' in C for a special needs school</li>
+                                <li>Designed a multi-layer Neural Network in Modula2 for AI Robot project</li>
+                                <li>Created a personality profiler for a Dating Agency using OOP and AI techniques in C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

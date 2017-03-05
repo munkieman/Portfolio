@@ -1,0 +1,31 @@
+﻿{
+  "VisualBasic": [
+    {
+      "functionName": "Working Days",
+      "project": "GSR",
+      "description": "To return the number of working days between two dates, this takes into consideration weekends but not public holidays",
+      "code": "01 Function Work_Days(\n\tBegDate As Variant, \n\tEndDate As Variant) As Integer \n02 \n03 Dim WholeWeeks As Variant \n04 Dim DateCnt As Variant \n05 Dim EndDays As Integer \n05 \n06 On Error GoTo Err_Work_Days \n07 "
+    },
+
+    {
+      "functionName": "Bubble Sort",
+      "project": "GSR",
+      "description": "",
+      "code": ""
+    },
+
+    {
+      "functionName": "Password Check",
+      "description": "",
+      "project": "GSR",
+      "code": ""
+    },
+
+    {
+      "functionName": "Login",
+      "description": "",
+      "project": "GSR",
+      "code": ""
+    }
+  ]
+}
